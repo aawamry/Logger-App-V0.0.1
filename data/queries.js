@@ -1,4 +1,4 @@
-export const createEventsLogTable = () => `
+export const createEventsLogTableQuery = () => `
   CREATE TABLE IF NOT EXISTS logs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT NOT NULL,

@@ -1,6 +1,6 @@
 {
-  "name": "loggerapp-v0.0.1",
-  "version": "0.0.1",
+  "name": "loggerapp-v0.0.2",
+  "version": "0.0.2",
   "description": "The Logger App is a lightweight and modular event logging utility built with Node.js, Express, and SQLite. It provides a structured way to capture, store, and query system events such as user actions, import/export operations, errors, and other application-level activities.",
   "main": "index.js",
   "scripts": {
