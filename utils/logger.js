@@ -10,14 +10,26 @@ import { insertLogQuery } from '../data/queries.js';
  * @param {string|null} [options.user_id=null] - ID of the acting user
  * @param {Object|null} [options.extra_data=null] - Additional data (stored as JSON)
  */
-export async function logEvent({ event_type, event_subject, event_message, user_id = null, extra_data = null }) {
+export async function logEvent({
+  event_type,
+  event_subject,
+  event_message,
+  user_id = null,
+  extra_data = null,
+}) {
   const dbInstance = await EventsLogDatabase.getInstance();
   const db = dbInstance.db;
 
   return new Promise((resolve, reject) => {
     db.run(
       insertLogQuery,
-      [event_type, event_subject, event_message, user_id, JSON.stringify(extra_data)],
+      [
+        event_type,
+        event_subject,
+        event_message,
+        user_id,
+        JSON.stringify(extra_data),
+      ],
       function (err) {
         if (err) {
           console.error('❌ Logger Error:', err.message);

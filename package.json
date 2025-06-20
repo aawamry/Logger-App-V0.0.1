@@ -1,0 +1,29 @@
+{
+  "name": "loggerapp-v0.0.1",
+  "version": "0.0.1",
+  "description": "The Logger App is a lightweight and modular event logging utility built with Node.js, Express, and SQLite. It provides a structured way to capture, store, and query system events such as user actions, import/export operations, errors, and other application-level activities.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aawamry/Logger-App-V0.0.1.git"
+  },
+  "keywords": ["logger", "event logger", "sqlite", "express", "node.js", "logging", "backend", "audit"],
+  "author": "Ahmad Lotfy",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aawamry/Logger-App-V0.0.1/issues"
+  },
+  "homepage": "https://github.com/aawamry/Logger-App-V0.0.1#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

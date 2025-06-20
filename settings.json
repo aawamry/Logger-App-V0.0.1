@@ -1,0 +1,6 @@
+// .vscode/settings.json or global settings
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "vscode.json-language-features"
+}
