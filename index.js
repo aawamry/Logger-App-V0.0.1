@@ -1,8 +1,10 @@
 import express from 'express';
 import logsRouter from './routes/logsapiroutes.js';
+import errorHandler from './middleware/errorHandler.js';
 
 const app = express();
 app.use(express.json());
+app.use(errorHandler)
 
 
 // Route for logs
